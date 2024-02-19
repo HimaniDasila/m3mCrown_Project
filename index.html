@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>M3M Crown</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins|Montserrat" />
+    <link rel="stylesheet" href="https://npmcdn.com/flickity@1.2/dist/flickity.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="menubar navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand col-md-4" href="index.html">
+          <img src="./images/logo.png" alt="" />
+        </a>
+        <div class="hamberger-menu-btn">
+          <img src="./images/hamberger_icon.png" alt="">
+        </div>
+        <div class="collapse navbar-collapse col-md-8" id="navbarSupportedContent">
+          <ul class="navbar-nav justify-content-end">
+            <li class="nav-item ms-3 p-2">
+              <a class="nav-link p-0" href="index.html">Home</a>
+            </li>
+            <li class="nav-item ms-3 p-2">
+              <a class="nav-link p-0" href="#overview">Overview</a>
+            </li>
+            <li class="nav-item ms-3 p-2">
+              <a class="nav-link p-0" href="#amenities">Amenities</a>
+            </li>
+            <li class="nav-item ms-3 p-2">
+              <a class="nav-link p-0" href="#location"> Location </a>
+            </li>
+            <li class="nav-item ms-3 p-2">
+              <a class="nav-link p-0" href="#price"> Price </a>
+            </li>
+            <li class="nav-item ms-3 p-2">
+              <a class="nav-link p-0" href="#gallery">Gallery</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="hero-section">
+      <div class="carousel js-flickity" data-flickity-options='{ "imagesLoaded":"true", "autoPlay": "true", "watchCSS":"true", "wrapAround": true, "pauseAutoPlayOnHover": false }'>
+        <div class="carousel-cell">
+          <img src="./images/image1.jpeg" />
+        </div>
+        <div class="carousel-cell">
+          <img src="./images/image2.jpeg" />
+        </div>
+        <div class="carousel-cell">
+          <img src="./images/image3.jpeg" />
+        </div>
+      </div>
+      <div class="form-wrapper">
+        <form>
+          <div class="mb-3 form-row">
+            <label for="first_name" class="form-label">First Name</label>
+            <input type="text" class="form-control" id="first_name" required />
+          </div>
+          <div class="mb-3 form-row">
+            <label for="last_name" class="form-label">Last Name</label>
+            <input type="text" class="form-control" id="last_name" required />
+          </div>
+          <div class="mb-3 form-row">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email" required />
+          </div>
+          <div class="mb-3 form-row">
+            <label for="number" class="form-label">Number</label>
+            <input type="number" class="form-control" id="number" required />
+          </div>
+          <button type="submit" class="cb-form-btn">Book Now</button>
+        </form>
+      </div>
+    </section>
+    <section class="overview-section" id="overview">
+      <div class="container text-center">
+        <h2 class="mb-4 text-center">Overview</h2>
+        <div class="crown-overview row">
+          <div class="overview-content col-lg-6">
+            <div class="cb-scroll-container">
+              <div class="cb-scroll-element cb-scroll top-to-bottom cb-scrolled">
+                <p>
+                  M3M Crown Is A Premium Residential Project Located In Sector111 Gurgaon, Dwarka Expressway. M3M Crown The Most Awaited Luxury Project launched By M3M In Sec 111.
+                  This place is known for its contemporary and innovative architectural designs, often incorporating sustainable features and modern technologies.
+                </p>
+                <p>
+                  This place is likely situated in a prime location within a major city or urban area, offering convenience and accessibility to key amenities, transportation hubs,
+                  and commercial centers.
+                </p>
+                <p>It often focus on providing luxurious and comfortable living or working spaces, with high-quality finishes, premium materials, and attention to detail.</p>
+                <p>
+                  It typically offer an array of luxurious amenities and facilities aimed at enhancing the quality of life for residents or the productivity of businesses. These
+                  may include landscaped gardens, swimming pools, fitness centers, recreational areas, 24/7 security, concierge services, and more.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="overview-image col-lg-6">
+            <img src="./images/overview.webp" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="amenities-section pb-5" id="amenities">
+      <h2 class="mb-4 text-center">Amenities</h2>
+      <div class="amenities-wrapper d-flex flex-wrap justify-content-center">
+        <div class="amenities-block p-2">
+          <div class="amenities-block-inner">
+            <div class="amenity-img">
+              <img src="./images/Jogging.jpeg" alt="" />
+            </div>
+            <div class="amenity-overlay">
+              <span>Jogging/Walking Track</span>
+            </div>
+          </div>
+        </div>
+        <div class="amenities-block p-2">
+          <div class="amenities-block-inner">
+            <div class="amenity-img">
+              <img src="./images/Spa.jpeg" alt="" />
+            </div>
+            <div class="amenity-overlay">
+              <span>Salon/Spa</span>
+            </div>
+          </div>
+        </div>
+        <div class="amenities-block p-2">
+          <div class="amenities-block-inner">
+            <div class="amenity-img">
+              <img src="./images/gym.jpeg" alt="" />
+            </div>
+            <div class="amenity-overlay">
+              <span>Fully Equipped Gym</span>
+            </div>
+          </div>
+        </div>
+        <div class="amenities-block p-2">
+          <div class="amenities-block-inner">
+            <div class="amenity-img">
+              <img src="./images/Flower.jpeg" alt="" />
+            </div>
+            <div class="amenity-overlay">
+              <span>Flower Garden</span>
+            </div>
+          </div>
+        </div>
+        <div class="amenities-block p-2">
+          <div class="amenities-block-inner">
+            <div class="amenity-img">
+              <img src="./images/Security.jpeg" alt="" />
+            </div>
+            <div class="amenity-overlay">
+              <span>24X7 Security</span>
+            </div>
+          </div>
+        </div>
+        <div class="amenities-block p-2">
+          <div class="amenities-block-inner">
+            <div class="amenity-img">
+              <img src="./images//Swimming.jpeg" alt="" />
+            </div>
+            <div class="amenity-overlay">
+              <span>Swimming Pool</span>
+            </div>
+          </div>
+        </div>
+        <div class="amenities-block p-2">
+          <div class="amenities-block-inner">
+            <div class="amenity-img">
+              <img src="./images/Pharmacy.jpeg" alt="" />
+            </div>
+            <div class="amenity-overlay">
+              <span>Pharmacy</span>
+            </div>
+          </div>
+        </div>
+        <div class="amenities-block p-2">
+          <div class="amenities-block-inner">
+            <div class="amenity-img">
+              <img src="./images/Multipurpose.jpeg" alt="" />
+            </div>
+            <div class="amenity-overlay">
+              <span>Multipurpose Hall</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="m3m-location" id="location">
+      <div class="container text-center pb-5">
+        <h2 class="mb-4">Location</h2>
+        <div class="cb-scroll-container">
+          <div class="cb-scroll-element cb-scroll top-to-bottom">
+            <p class="m-auto mb-4">
+              M3M Crown is a residential project by M3M Group located in Sector 111, Gurgaon. It is strategically located on the Dwarka expressway, 30-minute drive to the Indira
+              Gandhi International Airport.
+            </p>
+          </div>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3505.468548725829!2d77.02959927504233!3d28.525633138927827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1b00d8f173ad%3A0xd702d274b002ffaa!2sM3M%20Crown%20Apartments!5e0!3m2!1sen!2sin!4v1708326127864!5m2!1sen!2sin"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+    <section class="price-structure" id="price">
+      <div class="container text-center">
+        <h2 class="mb-4">Price</h2>
+        <div class="price-cards d-flex flex-wrap">
+          <div class="price-card p-3 m-1 d-grid">
+            <div class="rooms-type">
+              <p>3 BHK</p>
+            </div>
+            <div class="price-info">
+              <h5>SIZE</h5>
+              <p class="saleable-area">1605 Sq. Ft.</p>
+              <h5>PRICE</h5>
+              <p class="price-value">2.22 Cr* Onwards</p>
+            </div>
+            <div class="price-overlay">
+              <button class="know-more-btn">KNOW MORE</button>
+            </div>
+          </div>
+          <div class="price-card p-3 m-1 d-grid">
+            <div class="rooms-type">
+              <p>3 BHK + Study</p>
+            </div>
+            <div class="price-info">
+              <h5>SIZE</h5>
+              <p class="saleable-area">1895 Sq. Ft.</p>
+              <h5>PRICE</h5>
+              <p class="price-value">On Request</p>
+            </div>
+            <div class="price-overlay">
+              <button class="know-more-btn">KNOW MORE</button>
+            </div>
+          </div>
+          <div class="price-card p-3 m-1 d-grid">
+            <div class="rooms-type">
+              <p>3 BHK + Study + Utility</p>
+            </div>
+            <div class="price-info">
+              <h5>SIZE</h5>
+              <p class="saleable-area">2080 Sq. Ft.</p>
+              <h5>PRICE</h5>
+              <p class="price-value">On Request</p>
+            </div>
+            <div class="price-overlay">
+              <button class="know-more-btn">KNOW MORE</button>
+            </div>
+          </div>
+          <div class="price-card p-3 m-1 d-grid">
+            <div class="rooms-type">
+              <p>4 BHK + Utility</p>
+            </div>
+            <div class="price-info">
+              <h5>SIZE</h5>
+              <p class="saleable-area">2670 Sq. Ft.</p>
+              <h5>PRICE</h5>
+              <p class="price-value">On Request</p>
+            </div>
+            <div class="price-overlay">
+              <button class="know-more-btn">KNOW MORE</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="gallery-section" id="gallery">
+      <div class="container text-center pb-md-5">
+        <h2 class="mb-4">Gallery</h2>
+        <div
+          class="carousel js-flickity"
+          data-flickity-options='{ "imagesLoaded":"true", "autoPlay": "true", "watchCSS":"true", "wrapAround": "true", "pauseAutoPlayOnHover": "false", "groupCells": "true", "adaptiveHeight": "true"}'
+        >
+          <div class="carousel-cell p-2">
+            <img src="./images//img1.webp" />
+          </div>
+          <div class="carousel-cell p-2">
+            <img src="./images//img2.webp" />
+          </div>
+          <div class="carousel-cell p-2">
+            <img src="./images//img3.webp" />
+          </div>
+          <div class="carousel-cell p-2">
+            <img src="./images//img4.webp" />
+          </div>
+          <div class="carousel-cell p-2">
+            <img src="./images//img5.webp" />
+          </div>
+          <div class="carousel-cell p-2">
+            <img src="./images//img6.webp" />
+          </div>
+          <div class="carousel-cell p-2">
+            <img src="./images//img7.webp" />
+          </div>
+          <div class="carousel-cell p-2">
+            <img src="./images//img8.webp" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container text-center p-3 mt-5 mt-md-3">
+        <p class="m-0">M3M Crown, Dwarka Expressway, Sector 111, Gurugram, Haryana 122017</p>
+        <span>Copyright © 2024 All Rights Reserved.</span>
+      </div>
+    </footer>
+    <div class="cb-modal-container cb-form-modal">
+      <div class="cb-modal-overlay"></div>
+      <div class="cb-modal-content">
+        <form>
+          <button class="cb-close-btn">&times;</button>
+          <div class="mb-3 form-row">
+            <label for="First_name" class="form-label">First Name</label>
+            <input type="text" class="form-control" id="First_name" required="" />
+          </div>
+          <div class="mb-3 form-row">
+            <label for="Last_name" class="form-label">Last Name</label>
+            <input type="text" class="form-control" id="Last_name" required="" />
+          </div>
+          <div class="mb-3 form-row">
+            <label for="Email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="Email" required="" />
+          </div>
+          <div class="mb-3 form-row">
+            <label for="Number" class="form-label">Number</label>
+            <input type="number" class="form-control" id="Number" required="" />
+          </div>
+          <button type="submit" class="cb-form-btn">Get a Call</button>
+        </form>
+      </div>
+    </div>
+    <div class="cb-modal-container cb-image-modal">
+      <div class="cb-modal-overlay"></div>
+      <div class="cb-modal-content">
+        <img src="" alt="" />
+      </div>
+    </div>
+    <div class="cb-modal-container cb-list-modal">
+      <div class="cb-modal-overlay"></div>
+      <div class="cb-modal-content text-center">
+        <button class="cb-close-btn">&times;</button>
+        <ul class="p-0 m-0">
+          <li class="pb-2"><a href="index.html">HOME</a></li>
+          <li class="pb-2"><a href="#overview">OVERVIEW</a></li>
+          <li class="pb-2"><a href="#amenities">AMENITIES</a></li>
+          <li class="pb-2"><a href="#location">LOCATION</a></li>
+          <li class="pb-2"><a href="#price">PRICE</a></li>
+          <li class="pb-2"><a href="#gallery">GALLERY</a></li>
+        </ul>
+      </div>
+    </div>
+    <script src="https://npmcdn.com/flickity@1.2/dist/flickity.pkgd.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

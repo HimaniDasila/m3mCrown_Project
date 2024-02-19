@@ -1,0 +1,493 @@
+:root {
+  --blue: #144B8E;
+  --white: #fff;
+  --golden: #bf9955;
+  --orange: #ff6f05;
+  --brown: #3e3e3e;
+  --dark-brown: #27221d;
+  --black: #000;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.menubar .navbar-brand {
+  width: 120px;
+}
+
+.menubar .navbar-brand img {
+  width: 100%;
+}
+
+.menubar .nav-item .nav-link {
+  color: var(--white);
+  font-size: 16px;
+  font-family: "Poppins", "sans-serif";
+  text-transform: uppercase;
+}
+
+.menubar .nav-item .nav-link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: var(--golden);
+  transition: width .2s ease-in;
+}
+
+.menubar .nav-item .nav-link:hover::after {
+  width: 100%;
+}
+
+body .menubar {
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  background: var(--brown);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+}
+
+.menubar .hamberger-menu-btn {
+  width: 26px;
+  cursor: pointer;
+  display: none;
+}
+
+.menubar .hamberger-menu-btn img {
+  width: 100%;
+}
+
+.menubar .navbar-nav {
+  width: 100%;
+}
+
+.carousel-cell {
+  width: 100%;
+}
+
+.carousel-cell img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel:after {
+  content: 'flickity';
+  display: none;
+}
+
+body .hero-section {
+  position: relative;
+}
+
+.hero-section .form-wrapper {
+  position: absolute;
+  top: 80px;
+  right: 100px;
+  background: #232323;
+}
+
+.form-wrapper form {
+  width: 360px;
+  padding: 24px;
+  color: var(--white);
+}
+
+body .cb-form-btn {
+  background-color: var(--orange);
+  border: none;
+  color: var(--white);
+  font-weight: bold;
+  border-radius: 24px;
+  font-size: 18px;
+  margin-top: 10px;
+  width: 100%;
+  padding: 8px 15px;
+}
+
+body .overview-section .container,
+body .amenities-section,
+.m3m-location .container,
+.gallery-section .container {
+  padding-top: 100px;
+  font-family: "Montserrat", "sans-serif";
+}
+
+.price-structure .container {
+  padding-top: 100px;
+  font-family: "Poppins", "sans-serif";
+}
+
+.overview-section .overview-image {
+  text-align: center;
+}
+
+.overview-section img {
+  max-width: 500px;
+  width: 100%;
+}
+
+.amenities-section .amenities-block-inner {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.amenities-section .amenity-img {
+  max-width: 313px;
+  max-height: 216px;
+}
+
+.amenities-section .amenity-img img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.amenities-section .amenity-overlay {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  width: 100%;
+  background: linear-gradient(to top, #3d3d3d, transparent);
+}
+
+.amenities-section .amenity-overlay span {
+  position: absolute;
+  color: #fff;
+  bottom: 24px;
+  left: 24px;
+}
+
+.amenities-section .amenities-block:hover .amenity-overlay {
+  display: none;
+}
+
+.m3m-location p {
+  max-width: 800px;
+  font-family: "Poppins", "sans-serif";
+}
+
+.m3m-location a {
+  max-width: 800px;
+  display: inline-block;
+}
+
+.m3m-location img {
+  width: 100%;
+}
+
+body .m3m-location {
+  background: var(--dark-brown);
+  color: var(--white);
+}
+
+.m3m-location iframe {
+  max-width: 1000px;
+  width: 100%;
+}
+
+.price-structure .price-card {
+  width: calc(25% - 8px);
+  background-color: var(--golden);
+  color: var(--white);
+  border-radius: 12px;
+  position: relative;
+  grid-template-rows: 1fr auto;
+}
+
+.price-structure .rooms-type p {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.price-structure h5 {
+  color: var(--brown);
+}
+
+.price-structure .price-overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 12px;
+  transition: all 0.5s;
+  opacity: 0;
+}
+
+.price-structure .know-more-btn {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  border: 0;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-weight: 700;
+  opacity: 0;
+  transition: all 0.4s;
+  font-size: 12px;
+  font-family: "Montserrat", "sans-serif";
+}
+
+.price-structure .price-card:hover .know-more-btn {
+  top: 50%;
+  opacity: 1;
+  transform: translate(-50%, -50%);
+}
+
+.price-structure .price-card:hover .price-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+}
+
+.gallery-section .carousel-cell {
+  width: 220px;
+  height: 220px;
+}
+
+.flickity-viewport {
+  transition: height 0.2s;
+}
+
+.gallery-section .carousel-cell img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 24px;
+}
+
+body footer {
+  background-color: var(--dark-brown);
+  color: var(--white);
+}
+
+footer .container p {
+  font-size: 14px;
+}
+
+footer .container span {
+  font-size: 13px;
+}
+
+body .cb-modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
+  height: 100%;
+  width: 100%;
+  display: none;
+}
+
+.cb-modal-container .cb-modal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.cb-modal-container .cb-modal-content {
+  width: 360px;
+  background: #eee1d5;
+  z-index: 99;
+  position: relative;
+}
+
+.cb-modal-container.cb-image-modal .cb-modal-content {
+  width: 400px;
+}
+
+.cb-modal-container form {
+  padding: 48px 24px 24px;
+  color: var(--black);
+  position: relative;
+}
+
+.cb-modal-container .form-control {
+  background-color: transparent;
+  border-radius: 24px;
+  border: 1px solid var(--black);
+}
+
+.cb-modal-container .cb-close-btn {
+  border: none;
+  background: transparent;
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  font-size: 34px;
+  padding: 0;
+  line-height: 16px;
+  font-family: serif;
+}
+
+body .cb-modal-container.cb-show-modal {
+  display: flex;
+}
+
+.cb-modal-container .cb-modal-content img {
+  width: 100%;
+  box-shadow: #585858 0 0 10px 1px;
+}
+
+.cb-modal-container.cb-list-modal ul {
+  list-style-type: none;
+}
+
+.cb-modal-container.cb-list-modal ul a {
+  text-decoration: none;
+  color: var(--dark-brown);
+  font-family: "Poppins", "sans-serif";
+}
+
+.cb-modal-container.cb-list-modal .cb-modal-content {
+  width: 250px;
+  padding: 42px 24px 24px;
+  border-radius: 12px;
+  animation: slideIn 0.2s linear;
+}
+
+.cb-scroll {
+  opacity: 0;
+  transition: all ease-in-out 500ms;
+}
+
+.cb-scroll.cb-scrolled {
+  opacity: 1;
+}
+
+.cb-scrolled.top-to-bottom {
+  animation: top-to-bottom 0.8s ease-in-out both;
+}
+
+@keyframes top-to-bottom {
+  0% {
+    -webkit-transform: translateY(-100px);
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(240px);
+    animation-timing-function: ease-in;
+  }
+
+  100% {
+    transform: translateX(0px);
+    animation-timing-function: ease-in;
+  }
+}
+
+@media(max-width:992px) {
+  .overview-section .crown-overview {
+    flex-direction: column;
+  }
+
+  .m3m-location a {
+    max-width: 100%;
+  }
+
+  .overview-section .overview-content {
+    margin-bottom: 24px;
+  }
+
+  .price-structure .price-card {
+    width: calc(50% - 8px);
+  }
+
+  .hero-section .form-wrapper {
+    display: none;
+  }
+
+  .menubar .navbar-brand {
+    width: 100px;
+  }
+
+  .menubar .hamberger-menu-btn {
+    display: block;
+  }
+
+  body .overview-section .container,
+  body .amenities-section,
+  .m3m-location .container,
+  .price-structure .container,
+  .gallery-section .container {
+    padding-top: 80px;
+  }
+
+  .gallery-section .carousel-cell {
+    width: 170px;
+    height: 170px;
+  }
+}
+
+@media (max-width:767px) {
+  .gallery-section .carousel-cell {
+    height: 155px;
+    width: 155px;
+  }
+
+  .price-structure .rooms-type p,
+  .price-structure h5 {
+    font-size: 16px;
+  }
+
+  .amenities-section .amenity-overlay span {
+    font-size: 14px;
+  }
+
+  footer .container p,
+  footer .container span {
+    font-size: 12px;
+  }
+}
+
+@media (max-width:576px) {
+  .cb-modal-container .cb-close-btn {
+    font-size: 24px;
+  }
+
+  .cb-modal-container form {
+    padding: 32px 12px 16px;
+  }
+
+  .cb-modal-container .form-label {
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+
+  .cb-modal-container.cb-form-modal .cb-modal-content {
+    width: 85%;
+  }
+
+  .cb-modal-container.cb-image-modal .cb-modal-content {
+    width: 313px;
+  }
+
+  body .amenities-section {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .price-structure .price-card {
+    width: calc(100% - 8px);
+  }
+}
